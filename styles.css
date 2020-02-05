@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body{
+    color: #192539;
+    /* color: #fbf9f9; */
+    font-size: 1.1rem;
+    /* background-color: #192539; */
+    background-color: #fbf9f9;
+    /* letter-spacing: 1px; */
+    line-height: 2rem;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+h4{
+    text-align: center;
+}
+ul, li {
+    list-style: none;
+}
+
+.jumbotron{
+    background: url('waterhands.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.color-overlay{
+    width: 100%;
+    height: 100%;
+    /* background: #5f7ea2;
+    opacity: 0.7; */
+    position: absolute;
+}
+
+.jumbotron h1{
+    z-index: 1;
+    color: white;
+    background-color: darkblue;
+    padding: 20px;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-shadow: 2px 2px 2px #1B1E2D;
+}
+.intro-content{
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.donate-btn{
+    background-color: #e70b0b;
+    color: #efebf0;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: solid #192539 1px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+section{
+    margin: 10px 0px 0px 10px;
+}
+#textBody{
+    margin: 5% 10%;
+}
+#pageNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    color: white;
+    background-color: darkblue;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+#intro{
+    border: solid blue 2px;
+}
+#donations{
+    border: solid purple 2px;
+}
+#gives{
+    border: solid blue 2px;
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+#faq{
+    border: solid purple 2px;
+}
+#aboutUs{
+    border: solid blue 2px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+#socialLinks{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: baseline;
+}
+#socialLinks li a {
+    /* border: solid teal 2px; */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* -----------link styling--------------- */
+a {
+   text-decoration: none; 
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: orange;
+}
+a:active{
+    color: purple;
+}
