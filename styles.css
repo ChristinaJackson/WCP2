@@ -17,12 +17,23 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 
 }
+
+img{
+    max-width: 500px;
+    max-height: 500px;
+}
+.bodyImg{
+    max-height: 300px;
+    max-width: 300px;
+    border: solid darkgrey 1px;
+    border-radius: 2px;
+}
 h4{
     text-align: center;
 }
-ul, li {
+/* ul, li {
     list-style: none;
-}
+} */
 
 .jumbotron{
     background: url('waterhands.jpg');
@@ -94,8 +105,8 @@ section{
 }
 #gives{
     border: solid blue 2px;
-    display: grid;  
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 }
 #faq{
     border: solid purple 2px;
