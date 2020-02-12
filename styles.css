@@ -28,6 +28,13 @@ img{
     border: solid darkgrey 1px;
     border-radius: 2px;
 }
+
+.imgGridPhoto{
+    height: 250px;
+    width: 320px;
+    border: solid darkgrey 1px;
+    border-radius: 2px;
+}
 h4{
     text-align: center;
 }
