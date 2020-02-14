@@ -7,6 +7,7 @@ body{
     color: #192539;
     background-color: #fbf9f9;
     font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5rem;
 }
 img{
     max-width: 500px;
@@ -17,10 +18,6 @@ img{
     max-width: 300px;
     border: solid darkgrey 1px;
     border-radius: 2px;
-}
-.headerImg{
-    width: 33.33vw;
-    height: 33.33vh;
 }
 .imgGridPhoto{
     height: 250px;
@@ -35,21 +32,69 @@ ul, li {
     list-style: none;
 }
 
-.color-overlay{
+/* .color-overlay{
     width: 100%;
     height: 100%;
-    /* background: #5f7ea2;
-    opacity: 0.7; */
+    background: #5f7ea2;
+    opacity: 0.7;
     position: absolute;
+} */
+#headerContent{
+    /* padding: 20px; */
+    text-align: right;
+    background-color: #111;
+    color: #eee;
+    /* border: solid black 2px; */
 }
+#headerContent h1{
+    text-align: left;
+    font-size: 2.5rem;
+    padding: 20px 0px 10px 10px;
+    margin-bottom: 0.5rem;
+    /* border-bottom: solid black 2px; */
+    background-color: #eee;
+    color: #111;
+}
+.headerTagline{
+    /* border: solid hotpink 2px; */
+    /* padding-right: 1rem; */
+    padding: 1rem;
+    letter-spacing: 0.5px;
+    /* margin-left: 50%;
+    width: 50%; */
 
-#intro{
-    text-align: center;
 }
-.intro-content{
-    display: inline-flex;
-    flex-direction: column;
+#headerContent button{
+    font-size: 1rem;
+    /* margin-right: 30%; */
+    text-align: center;
+    align-content: center;
+    border: solid black 2px;
+}
+#intro{
+    padding: 0; 
+    display: flex;
+    flex-direction: row;
+    /* border: solid hotpink 2px; */
     align-items: center;
+    background-color: #eee;
+    color: #111;
+}
+.missionImg{
+    max-width: 100%;
+    height: auto;
+    /* border: solid greenyellow 2px; */
+    padding: 1rem;
+}
+.mission{
+    padding: 1rem;
+    text-align: justify;
+    /* border: solid teal 2px; */
+    width: 75%;
+}
+.mission h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 .donate-btn{
     background-color: #e70b0b;
@@ -60,78 +105,92 @@ ul, li {
     border-radius: 5px;
 }
 section{
-    padding: 10px;
     margin-bottom: 10px;
 }
-#textBody{
-    margin: 5%;
+.aidContent{
+    border: solid pink 2px;
+    width: 75%;
+    padding: 1rem;
 }
-#pageNav{
+#gives button{
+    margin: 1rem 0;
+}
+
+#peopleHelped{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 15px;
-    color: white;
-    background-color: cornflowerblue;
-    width: 100%;
-    height: 50px;
+    justify-content: space-evenly;
+    padding: 1rem;
+    /* background-color: #eee; */
+    /* border: solid hotpink 2px; */
 }
-.headerContent{
-    text-align: center;
-    border: solid green 2px;
+#peopleHelped img{
+    /* border: solid #111 1px; */
+    max-width:100%;
+    height: auto;
+    padding: 1rem;
 }
-#intro{
-    /* border: solid blue 2px; */
-    display: flex;
-    /* flex-direction: column; */
-}
-.mission{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.mission h2{
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-.mission p {
-    line-height: 2rem;
+#peopleHelped:first-child{
+    border: solid pink 5px;
 }
 .hopes{
     display: flex;
 }
 #weProvide{
+    border: solid black 1px;
+}
+.distiller{
+    margin-bottom: 20px;
+}
+.distiller, .bottled-water{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: solid hotpink 2px; */
+}
+.distiller img, .bottled-water img{
+    max-width: 100%;
+    height: auto;
 }
 
-.bottled-water{
-}
-#donations{
-    border: solid purple 2px;
-}
-.aid{
-    /* width: 50%; */
-    text-align: center;
-    border: solid green 2px;
-}
 #gives{
     display: flex;
-    flex-direction: column; 
-    border: solid blue 2px; 
+    flex-direction: row; 
+    border: solid #111 2px; 
+    letter-spacing: 0.5px;
 }
 #gives .donationsGo{
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
     text-align: center;
-    margin-bottom: 10px;
-    border: solid black 2px;
+    /* margin-bottom: 10px; */
+    /* border: solid black 2px; */
+    background-color: #111;
+    color: #eee;
 }
-.donation-gives{
-    /* border: solid red 2px */
+.donationsGo button{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.donationsGo{
+    /* border: solid black 2px; */
+    /* padding: 1rem; */
+    text-align: center;
 }
 .amounts{
-    padding: 10px;
-    border: solid blue 2px;
+    background-color: #eee;
+    /* align-content: center; */
+    align-items: center;
+    color: #111;
+    width: 75%;
+    padding: 1rem;
     display: grid;  
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+}
+.givesDistiller{
+    /* border: solid red 2px */
 }
 #faq{
     border: solid purple 2px;
@@ -147,6 +206,7 @@ footer{
     flex-direction: column;
     background-color: black;
     color: white;
+    padding: 10px;
 }
 #socialLinks{
     display: flex;
