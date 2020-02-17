@@ -83,6 +83,10 @@ ul, li {
     border: solid #192539 1px;
     border-radius: 5px;
 }
+.donate-btn:active{
+    translate: 1px 2px;
+    background-color: royalblue;
+}
 section{
     margin-bottom:1rem;
 }
@@ -134,12 +138,16 @@ margin-bottom: 0;
     flex-direction: row;
     justify-content: space-around;
 } 
+/* #weProvide .moveButton{
+    border: solid black 10px;
+    margin-top: 2rem;
+} */
 .card{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    width: 40%;
+    width: 45%;
     padding: 1rem;
     background-color: #ddd;
     border-radius: 10px;
@@ -157,7 +165,7 @@ margin-bottom: 0;
 #imgGrid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 10px;
     align-items: center;
 }
 .imgGridPhoto{
@@ -209,13 +217,18 @@ footer{
 /* -----------link styling--------------- */
 a {
    text-decoration: none; 
+   color: #eee;
 }
-a:visited{
+/* a:visited{
     color: white;
-}
+} */
 a:hover{
-    color: orange;
+    color: royalblue;
+    text-decoration: underline;
+
 }
 a:active{
-    color: purple;
+    translate: 1px 2px;
+
+
 }
