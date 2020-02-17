@@ -3,6 +3,10 @@
     padding:0;
     box-sizing:border-box;
 }
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 body{
     color: #192539;
     background-color: #f6f6f6;
@@ -19,6 +23,9 @@ img{
     max-width: 300px;
     border: solid darkgrey 1px;
     border-radius: 2px;
+}
+#imgGrid{
+    margin-top: 4rem;
 }
 .imgGridPhoto{
     height: 250px;
@@ -77,7 +84,6 @@ ul, li {
     border: solid black 2px;
 }
 #intro{
-    padding: 0; 
     display: flex;
     flex-direction: row;
     /* border: solid hotpink 2px; */
@@ -91,7 +97,8 @@ ul, li {
     max-width: 100%;
     height: auto;
     /* border: solid greenyellow 2px; */
-    padding: 1rem;
+    /* padding: 1rem; */
+    vertical-align: middle;
 }
 .mission{
     padding: 1rem;
@@ -99,7 +106,7 @@ ul, li {
     /* border: solid teal 2px; */
     width: 75%;
 }
-.mission h2{
+.mission h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -113,13 +120,7 @@ ul, li {
     border-radius: 5px;
 }
 section{
-    margin-bottom: 1rem;
-}
-.aidContent{
-    /* background-color: #e70b0b; */
-    /* color: #eee; */
-    width: 75%;
-    padding: 1rem;
+    margin-bottom:1rem;
 }
 
 .donationsGo button{
@@ -129,109 +130,134 @@ section{
 .donationsGo{
     text-align: center;
     color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #ddd; */
+    /* width: 75%;  */
+    /* margin-left: 50%; */
+    /* border: solid green 2px; */
+    /* text-align: center; */
+    /* border-radius: 20px; */
+     padding: 2rem;
 }
+
 #peopleHelped{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-end;
     background-color: #eee;
     padding: 1rem;
-    /* border: solid hotpink 2px; */
 }
 #peopleHelped img{
-    width: 320px;
-    height: 260px; 
+    height: 200px;
+    width: 260px;
     border: solid #111 1px;
 
 }
 #peopleHelped img:first-child{
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
+
 #gives{
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     align-items: center;
+    justify-content: center;
     letter-spacing: 0.5px;
-    background-color: #111;
+    /* background-color: #111; */
+    /* width:50%; */
     color:#eee;
+
 }
 #gives button{
     margin: 1rem 0;
     color: #111;
-    background-color: cornflowerblue;
+    background-color: royalblue;
     font-size: 1rem;
     border: solid #111 1px;
 }
-#gives h2{
+#gives .aidContent h2{
     font-size: 2.2rem;
-    margin: 1rem 0;
+    text-align: right;
     padding: 1rem;
-    /* border: solid yellow 2px; */
 }
 #gives span{
     color: #eee;
-    font-size: 3rem;
-    
+    text-decoration: underline;
 }
+/* 2 options here- full width red bar or as is now */
 #gives .aidContent{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #cd2026;
-    width: 100%;
-    border-top: solid #111 20px;
+    /* border: solid #111 5px; */
+    width: 80%; 
+    margin: 1rem;
     text-align: center;
     color: #111;
+    border-radius: 10px;
+     padding: 1rem;
 }
+
 #gives .aidContent p{
     width: 75%;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
-.amounts{
-    width: 100%;
-    /* padding: 1rem; */
-    margin-top: 1rem;
-    /* border: solid hotpink 2px; */
-    background-color: #111;
-    color: #eee;
-    font-weight: bolder;
-    display: grid;  
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+#gives .percent{
+    border: solid hotpink 2px;
+    margin: auto;
+    padding: 1rem;
 }
-.donation-gives{
-    /* border: solid #eee 2px; */
-    text-align: center;
-    margin: 0.2rem;
 
-}
-.hopes{
-    display: flex;
-}
 #weProvide{
-    border: solid black 1px;
-}
-.distiller{
-    margin-bottom: 20px;
-}
-.distiller, .bottled-water{
+    /* border: solid hotpink 3px; */
+    background-color: #111;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+} 
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    padding: 1rem;
+    /* padding: 1rem; */
+    /* align-items: center; */
+    background-color: #eee;
+    border-radius: 10px;
+    /* border: solid #111 3px; */
+}
+.cardText{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /* border: solid hotpink 2px; */
+    justify-content: space-between;
+    /* border: solid orangered 2px; */
+    /* height: 80%; */
+    /* padding: 0 1rem; */
+    /* background-color: #fff; */
 }
-.distiller img, .bottled-water img{
-    /* max-width: 100%;
-    height: auto; */
+.cardContent h2{
+    font-size: 2.2rem;
+    line-height: 2rem;
+    /* text-align: right; */
+    /* padding: 1rem; */
+    margin-bottom: 0.5rem;
 }
-#faq{
-    border: solid purple 2px;
-}
-.questionAnswer{
- border: solid green 2px;
-}
+
 #aboutUs{
     border: solid blue 2px;
+    padding: 1rem 5rem;
+}
+
+#aboutUs .textContent{
+    /* width: 7%; */
+    border: solid hotpink 1px;
 }
 footer{
     display: flex;
