@@ -14,6 +14,7 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5rem;
 }
+
 img{
     max-width: 500px;
     max-height: 500px;
@@ -24,16 +25,7 @@ img{
     border: solid darkgrey 1px;
     border-radius: 2px;
 }
-#imgGrid{
-    margin-top: 3rem;
-    padding: 1rem;
-}
-.imgGridPhoto{
-    height: 250px;
-    width: 320px;
-    border: solid darkgrey 1px;
-    border-radius: 2px;
-}
+
 h4{
     text-align: center;
 }
@@ -41,19 +33,10 @@ ul, li {
     list-style: none;
 }
 
-/* .color-overlay{
-    width: 100%;
-    height: 100%;
-    background: #5f7ea2;
-    opacity: 0.7;
-    position: absolute;
-} */
 #headerContent{
-    /* padding: 20px; */
     text-align: right;
     background-color: #111;
     color: #eee;
-    /* border: solid black 2px; */
 }
 #headerContent span{
     color:#e70b0b;
@@ -62,49 +45,28 @@ ul, li {
 #headerContent h1{
     text-align: left;
     font-size: 2.5rem;
-    padding: 20px 0px 10px 10px;
-    margin-bottom: 0.5rem;
-    /* border-bottom: solid black 2px; */
+    padding: 1rem 0 0.5rem 1rem;
     background-color: #f6f6f6;
     color: #111;
 }
 .headerTagline{
-    /* border: solid hotpink 2px; */
-    /* padding-right: 1rem; */
     padding: 1rem;
-    letter-spacing: 0.5px;
-    /* margin-left: 50%;
-    width: 50%; */
+}
 
-}
-#headerContent button{
-    font-size: 1rem;
-    /* margin-right: 30%; */
-    text-align: center;
-    align-content: center;
-    border: solid black 2px;
-}
 #intro{
     display: flex;
     flex-direction: row;
-    /* border: solid hotpink 2px; */
     align-items: center;
     background-color: #ddd;
-    /* background-color: #0d2258; */
     color: #111;
-    /* color: #eee; */
 }
 .missionImg{
     max-width: 100%;
     height: auto;
-    /* border: solid greenyellow 2px; */
-    /* padding: 1rem; */
     vertical-align: middle;
 }
 .mission{
     padding: 1rem;
-    text-align: justify;
-    /* border: solid teal 2px; */
     width: 75%;
 }
 .mission h2 {
@@ -112,11 +74,11 @@ ul, li {
     margin-bottom: 1rem;
 }
 .donate-btn{
-    /* background-color: #e70b0b; */
     background-color: #cd2026;
-    /* background-color: blue; */
     color: #efebf0;
     padding: 10px;
+    margin-top: 1rem;
+    font-size: 1rem;
     font-weight: bold;
     border: solid #192539 1px;
     border-radius: 5px;
@@ -125,142 +87,107 @@ section{
     margin-bottom:1rem;
 }
 
-.donationsGo button{
+/* .donationsGo button{
     margin-top: 1rem;
     font-size: 1rem;
-}
+} */
 .donationsGo{
     text-align: center;
-    color: #111;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: #ddd; */
-    /* width: 75%;  */
-    /* margin-left: 50%; */
-    /* border: solid green 2px; */
-    /* text-align: center; */
-    /* border-radius: 20px; */
-     /* padding: 2rem; */
-}
-
-#peopleHelped{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: #eee;
-    padding: 1rem;
-}
-#peopleHelped img{
-    height: 200px;
-    width: 260px;
-    border: solid #111 1px;
-
-}
-#peopleHelped img:first-child{
-    /* margin-right: 2rem; */
 }
 
 #gives{
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.5px;
-    /* background-color: #111; */
-    /* width:50%; */
     color:#eee;
-
-}
-#gives button{
-    margin: 1rem 0;
+    background-color: #cd2026;
+    /* border: solid #111 5px; */
+    background: #111;
+    margin: auto;
+    text-align: center;
     color: #111;
-    background-color: royalblue;
-    font-size: 1rem;
-    border: solid #111 1px;
+    /* border-radius: 10px; */
+    padding: 1rem 2rem;
+margin-bottom: 0;
 }
+#gives .aidContent{
+    background-color: #cd2026;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    color: #111;
+    border-radius: 10px;
+    padding: 1rem 2rem; 
+}
+
 #gives .aidContent h2{
     font-size: 2.2rem;
-    text-align: right;
     padding: 1rem;
+    /* border: solid hotpink 20px; */
 }
 #gives span{
     color: #eee;
     text-decoration: underline;
 }
-/* 2 options here- full width red bar or as is now */
-#gives .aidContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #cd2026;
-    border: solid #111 5px;
-    width: 80%; 
-    margin: 1rem;
-    text-align: center;
-    color: #111;
-    border-radius: 10px;
-     padding: 1rem;
-}
-
-#gives .aidContent p{
-    width: 75%;
-    /* margin-bottom: 1rem; */
-}
-#gives .percent{
-    border: solid hotpink 2px;
-    margin: auto;
-    padding: 1rem;
-}
 
 #weProvide{
-    /* border: solid hotpink 3px; */
     background-color: #111;
-    padding: 1rem;
+    padding: 1rem ;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
 } 
 .card{
     display: flex;
     flex-direction: row;
-    width: 35%;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 40%;
     padding: 1rem;
-    /* padding: 1rem; */
-    /* align-items: center; */
     background-color: #eee;
     border-radius: 10px;
-    /* border: solid #111 3px; */
 }
-.cardText{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /* border: solid orangered 2px; */
-    /* height: 80%; */
-    /* padding: 0 1rem; */
-    /* background-color: #fff; */
-}
+
 .cardContent h2{
     font-size: 2.2rem;
     line-height: 2rem;
-    text-align: center;
-    /* padding: 1rem; */
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#pictures{
+
+}
+#imgGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+}
+.imgGridPhoto{
+    margin: auto;
+    height: 180px;
+    width: 220px;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 4px 0px  rgba(0,0,0,0.3);
+    /* max-width: 100%; */
 }
 
 #aboutUs{
-    border: solid blue 2px;
-    padding: 1rem 5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+ 
 }
 
 #aboutUs .textContent{
-    /* width: 7%; */
-    border: solid hotpink 1px;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    /* background-color: white; */
+    /* margin: 1rem 0; */
 }
+.textContent p {
+    text-align: justify;
+    margin: 1rem;
+    text-indent: 1rem;
+} 
 footer{
     display: flex;
     flex-direction: column;
@@ -275,7 +202,6 @@ footer{
     align-items: baseline;
 }
 #socialLinks li a {
-    /* border: solid teal 2px; */
     padding: 10px;
     margin-bottom: 20px;
 }
