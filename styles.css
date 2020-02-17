@@ -97,9 +97,9 @@ section{
 
 #gives{
     color:#eee;
-    background-color: #cd2026;
+    /* background-color: #cd2026; */
     /* border: solid #111 5px; */
-    background: #111;
+    /* background: #111; */
     margin: auto;
     text-align: center;
     color: #111;
@@ -128,7 +128,7 @@ margin-bottom: 0;
 }
 
 #weProvide{
-    background-color: #111;
+    /* background-color: #111; */
     padding: 1rem ;
     display: flex;
     flex-direction: row;
@@ -141,7 +141,7 @@ margin-bottom: 0;
     text-align: center;
     width: 40%;
     padding: 1rem;
-    background-color: #eee;
+    background-color: #ddd;
     border-radius: 10px;
 }
 
