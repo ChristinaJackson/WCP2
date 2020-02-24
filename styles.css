@@ -31,7 +31,7 @@ ul, li {
 
 #headerContent{
     text-align: right;
-    background-color: #111;
+    background-color: #212529;
     color: #eee;
 }
 #headerContent span{
@@ -43,7 +43,7 @@ ul, li {
     font-size: 2.5rem;
     padding: 1rem 0 0.5rem 1rem;
     background-color: #f6f6f6;
-    color: #111;
+    color: #212529;
 }
 .headerTagline{
     padding: 2rem;
@@ -53,8 +53,10 @@ ul, li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #ddd;
+    background-color: #212529;
     color: #111;
+    color: #f6f6f6;
+    font-weight:bold;
 }
 .missionImg{
     max-width: 100%;
@@ -174,10 +176,7 @@ section{
     /* justify-content: center; */
     margin: auto;
 }
-#weProvide .card:first-child{
-    /* border: solid hotpink 8px; */
-    
-}
+
 
 .cardContent h2{
     font-size: 1.7rem;
@@ -270,34 +269,37 @@ a:active{
 }
 
 .top{
-    background-color:#191919;
+    background-color:#212529;
     color: #f6f6f6;
     height: 100%;
-
+border-radius: 10px;
     padding: 1rem;
     text-align: center;
 }
-.bottom{
+.cardSection .bottom{
     background-color:royalblue;
     color: #f6f6f6;
     height: 100%;
-    padding: 1rem;
-
     text-align: center;
-}
-.card2 button {
-    background-color:yellow;
-    color: #191919;
+    border-radius: 10px;
+    padding: 1rem;
 }
 .card2{
-    /* width: 25%;  */
-    display: flex;
-    background-color: #191919;
-    align-items: center;
-    margin-bottom: 1rem;
+    margin: 1rem;
+}
+.card2 button {
+    background-color:red;
+    color: #191919;
+}
+.cardSection{
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  /* border: solid hotpink 2px; */
+
 }
 .top h2{
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
 }
