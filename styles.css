@@ -9,17 +9,15 @@ html {
   }
 body{
     color: #192539;
-    /* background-color: #f6f6f6; */
     background-color: #f6f6f6;
     /* background-color: #0d2258; */
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5rem;
-    font-weight: 300;
 }
 
 img{
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 
@@ -31,22 +29,21 @@ ul, li {
 }
 
 #headerContent{
-    text-align: center;
+    text-align: right;
     background-color: #111;
     color: #eee;
-}
-#headerContent h1{
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 1rem;
-    background-color: #f6f6f6;
-    color: #111;
 }
 #headerContent span{
     color:#e70b0b;
     font-size: 3rem;
 }
-
+#headerContent h1{
+    text-align: left;
+    font-size: 2.5rem;
+    padding: 1rem 0 0.5rem 1rem;
+    background-color: #f6f6f6;
+    color: #111;
+}
 .headerTagline{
     padding: 2rem;
 }
@@ -55,9 +52,8 @@ ul, li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* background-color: #8C97A0;  */
+    background-color: #ddd;
     color: #111;
-
 }
 .missionImg{
     max-width: 100%;
@@ -65,15 +61,12 @@ ul, li {
     vertical-align: middle;
 }
 .mission{
-    /* padding: 2rem 3rem; */
-    margin:0 2rem;
+    padding: 1rem;
     width: 75%;
-    /* border: solid lime 2px; */
-
 }
 .mission h2 {
-    font-size: 2rem;
-    margin-bottom: .8rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 .donate-btn{
     background-color: #2452dc;
@@ -84,12 +77,6 @@ ul, li {
     font-weight: bold;
     border: solid #192539 1px;
     border-radius: 5px;
-}
-#intro  button{
-    padding:  0.8rem 1.3rem;
-    /* border: solid lime 2px; */
-    font-weight: 500;
-    margin-top: 1.5rem;
 }
 .donate-btn:active{
     translate: 1px 2px;
@@ -110,19 +97,27 @@ section{
     text-align: center;
 }
 
-/* #gives{
+#gives{
     color:#eee;
+    /* background-color: #cd2026; */
+    /* border: solid #111 5px; */
+    /* background: #111; */
     margin: auto;
     text-align: center;
     color: #111;
+    /* border-radius: 10px; */
     padding: 1rem 2rem;
     margin-bottom: 0;
 }
 #gives .aidContent{
-    background-color: #cd2026;
+    /* background-color: #cd2026; */
+    /* background-color: royalblue; */
+    background-color: #ddd ;
     margin: auto;
-    text-align: left;
+    width: 75%;
+    text-align: center;
     color: #111;
+    /* color: royalblue; */
     border-radius: 10px;
     padding: 1rem 2rem; 
 }
@@ -130,11 +125,13 @@ section{
 #gives .aidContent h2{
     font-size: 2.2rem;
     padding: 1rem;
+    /* border: solid hotpink 20px; */
 }
 #gives span{
-    color: #eee;
+    /* color: #eee; */
+    color: royalblue;
     text-decoration: underline;
-} */
+}
 
 #weProvide{
     /* background-color: #111; */
@@ -154,9 +151,7 @@ section{
     text-align: center;
     width: 45%;
     padding: 1rem;
-    /* background-color: #ddd; */
-    background-color: #eee;
-    color: #111;
+    background-color: #ddd;
     border-radius: 10px;
 }
 
@@ -164,11 +159,8 @@ section{
     font-size: 2.2rem;
     line-height: 2rem;
     margin-bottom: 1rem;
-    /* color: #f6f6f6; */
 }
-#pictures{
-    margin-top: 5rem;
-}
+
 #pictures h2, #aboutUs h2{
     font-size: 2.2rem;
 }
@@ -239,93 +231,6 @@ a:hover{
 }
 a:active{
     translate: 1px 2px;
+
+
 }
-
-@media only screen and (max-width: 600px) {
-    #intro{
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
-}
-
-/* -----newstuff-------- */
-.card2 img{
-    width: 250px;
-    border-radius: 10px;
-    /* margin-bottom: .5rem; */
-    /* padding: 1rem 0rem 0 1rem; */
-  }
-  
-  figcaption{
-    font-style: italic;
-    font-size: .8rem;
-    text-align: center;
-  }
-  
-  .card2{
-    /* border: solid hotpink 2px; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* background-color: #ddd; */
-
-  }
-  
-  .card2 > div{
-      padding: 1rem;
-  }
-  .card2 .innerCard{
-      display: flex;
-      flex-direction: row;
-      /* border: solid red 2px; */
-    background-color: #f6f6f6;
-    align-items: center;
-
-  }
-  .card2 .innerCard:first-child{
-      margin-right: 1rem;
-      /* border: solid black 2px; */
-  }
-  .supply {
-    /* border: solid lime 2px; */
-    flex-wrap: wrap;
-    /* width: 50%; */
-    padding: 0 1rem;
-  }
-
-  #gives{
-      display: flex;
-      flex-direction: row;
-      padding: 1rem;
-      /* align-items: center; */
-      background-color: #f6f6f6;
-      /* border: solid black 2px; */
-
-
-  }
-  #gives .aidContent{
-      width: 50%;
-      margin-left: 1rem;
-      /* border: solid lime 2px; */
-  }
-  #gives h2{
-      font-size: 1.3rem;
-      margin-bottom: 0.3rem;
-  }
- .donations2 li {
-    list-style-type: disc;
-    /* padding-left: 1rem; */
-
-  }
-  .donations2 ul {
-    margin-left: 1rem;
-  }
-  .donations2{
-      /* border: solid blue 2px; */
-      padding: 0 1rem;
-      text-align: center;
-      width: 50%;
-
-
-  }
