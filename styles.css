@@ -13,6 +13,7 @@ body{
     /* background-color: #0d2258; */
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5rem;
+    /* font-weight: 400; */
     
 }
 #textBody{max-width: 1200px; margin: auto;}
@@ -261,7 +262,7 @@ a:active{
 
 
  .float{
-    float:left;
+    float:right;
     font-size: 2rem;
     line-height: 2rem;
     padding:1rem;
@@ -269,8 +270,10 @@ a:active{
 }
 
 .top{
-    background-color:#212529;
+    background-color:white;
+    border: solid #212529 1px;
     color: #f6f6f6;
+    color: #212529;
     height: 100%;
 border-radius: 10px;
     padding: 1rem;
@@ -288,8 +291,8 @@ border-radius: 10px;
     margin: 1rem;
 }
 .card2 button {
-    background-color:red;
-    color: #191919;
+    /* background-color:red; */
+    /* color: #191919; */
 }
 .cardSection{
   display: flex;
@@ -299,7 +302,7 @@ border-radius: 10px;
 
 }
 .top h2{
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
 
 }
