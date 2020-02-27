@@ -10,18 +10,15 @@ html {
 body{
     color: #192539;
     background-color: #f6f6f6;
-    /* background-color: #0d2258; */
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5rem;
-    /* font-weight: 400; */
-    
 }
+/* keeps the body of the page from getting too big */
 #textBody{max-width: 1200px; margin: auto;}
 img{
     max-width: 500px;
     max-height: 500px;
 }
-
 
 h4{
     text-align: center;
@@ -54,9 +51,8 @@ ul, li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #212529;
-    color: #111;
-    color: #f6f6f6;
+    color: #212529;
+    background-color: #eee;
     font-weight:bold;
 }
 .missionImg{
@@ -89,10 +85,7 @@ ul, li {
 }
 .donate-btn:active{
     translate: 1px 2px;
-    /* background-color: green; */
     background-color: #4169e1;
-
-
 }
 section{
     margin-bottom:1rem;
@@ -102,31 +95,22 @@ section{
     text-align: center;
     border: solid red 2px;
     margin: auto;
-    /* width: 50%; */
-
 }
 
 #gives{
     color:#eee;
-    /* background-color: #cd2026; */
-    /* border: solid #111 5px; */
-    /* background: #111; */
     margin: auto;
     text-align: center;
     color: #111;
-    /* border-radius: 10px; */
     padding: 1rem 2rem;
     margin-bottom: 0;
 }
 #gives .aidContent{
-    /* background-color: #cd2026; */
-    /* background-color: royalblue; */
     background-color: #ddd ;
     margin: auto;
     width: 50%;
     text-align: center;
     color: #111;
-    /* color: royalblue; */
     border-radius: 10px;
     padding: 1rem 2rem; 
 }
@@ -134,10 +118,8 @@ section{
 #gives .aidContent h2{
     font-size: 2.2rem;
     padding: 1rem;
-    /* border: solid hotpink 20px; */
 }
 #gives span{
-    /* color: #eee; */
     color: royalblue;
     text-decoration: underline;
 }
@@ -153,42 +135,40 @@ section{
 #weProvide img{
     height:250px;
     border-radius: 10px 10px 0 0;
-    /* margin: 1rem; */
 }
 .card{
     display: flex;
     flex-direction: column;
     flex: 1 1 50%;
-    /* border: solid hotpink 2px; */
     background-color: #212529;
     color: #f6f6f6;
     border-radius: 10px;
     max-width: 400px;
-    /* padding: 1rem 0 ; */
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
     margin-bottom: 1rem;
 }
 
 .cardText{
     padding: 0 2rem 1rem;
-    /* border: solid lime 2px; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     margin: auto;
 }
-
-
 .cardContent h2{
     font-size: 1.7rem;
     margin: 0.5rem 0 0.5rem 0;
     text-align: center;
 }
-#pictures{margin-top: 1rem;}
+#pictures{
+    margin-top: 1rem;
+}
 #pictures h2, #aboutUs h2{
     font-size: 2.2rem;
 }
 #imgGrid{
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #212529;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 10px;
@@ -196,38 +176,82 @@ section{
 }
 .imgGridPhoto{
     margin: auto;
+    border-radius: 10px;
     height: 180px;
     width: 220px;
-    border: 1px solid #eee;
     box-shadow: 1px 1px 4px 0px  rgba(0,0,0,0.3);
-    /* max-width: 100%; */
 }
 
-#aboutUs{
+#facts{
+    display: flex;
+    flex-direction: row;
+}
+.factsCard{
+    margin: 1rem;
+}
+#facts .percent{
+    background-color:royalblue;
+    color: #f6f6f6;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.aid{
+    background-color:white;
+    border: solid #212529 1px;
+    color: #f6f6f6;
+    color: #212529;
+    height: 100%;
+    border-radius: 10px;
     padding: 1rem;
     text-align: center;
+}
+.aid h2{
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+
+}
+#aboutUs{
+    padding: 2rem ;
+    text-align: center;
     background-color: white;
-    /* border: solid red 2px; */
- 
+    background-color: #212529;
+    color: #f6f6f6;
+    border-radius: 10px;
+}
+#aboutUs h2{
+    text-align: center;
 }
 
 #aboutUs .textContent{
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* padding: 0 1rem 1rem 1rem; */
-    /* background-color: white; */
-    /* margin: 1rem 0; */
+    background-color: #f6f6f6;
+    color: #212529;
+    padding: 1rem;
     text-align: justify;
+    border-radius: 10px;
 }
 .textContent p {
     text-align: justify;
     margin: 1rem;
 } 
+
+.floatQuote{
+    float:right;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding:1rem;
+    margin: 2rem 1rem 0 0rem;
+    width: 50%;
+    color: #e70b0b;
+}
+
 footer{
     display: flex;
     flex-direction: column;
     background-color: black;
-    color: white;
+    color: #f6f6f6;
     padding: 10px;
 }
 #socialLinks{
@@ -254,55 +278,7 @@ a:hover{
     text-decoration: underline;
 
 }
+
 a:active{
     translate: 1px 2px;
-
-
-}
-
-
- .float{
-    float:right;
-    font-size: 2rem;
-    line-height: 2rem;
-    padding:1rem;
-    width: 45%;
-}
-
-.top{
-    background-color:white;
-    border: solid #212529 1px;
-    color: #f6f6f6;
-    color: #212529;
-    height: 100%;
-border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-}
-.cardSection .bottom{
-    background-color:royalblue;
-    color: #f6f6f6;
-    height: 100%;
-    text-align: center;
-    border-radius: 10px;
-    padding: 1rem;
-}
-.card2{
-    margin: 1rem;
-}
-.card2 button {
-    /* background-color:red; */
-    /* color: #191919; */
-}
-.cardSection{
-  display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  /* border: solid hotpink 2px; */
-
-}
-.top h2{
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-
 }
